@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Survey Form</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<h1>freeCodeCamp Survey Form</h1>
+			<p>Thank you for taking the time to help us improve the platform</p>
+		</header>
+
+		<main>
+			<form action="">
+				<label for="name">Name</label>
+				<input
+					type="text"
+					id="name"
+					placeholder="Enter your name"
+					name="name"
+					required
+				/>
+
+				<label for="email">Email</label>
+				<input
+					type="text"
+					id="email"
+					placeholder="Enter your email"
+					name="email"
+					required
+				/>
+
+				<label for="age">Age <span>(optional)</span></label>
+				<input
+					type="text"
+					id="age"
+					placeholder="Age"
+					name="Age"
+					required
+				/>
+
+				<label for="role"
+					>Which option best describes your current role?</label
+				>
+				<select id="role" name="role" required>
+					<option value="">Select current role</option>
+					<option value="student">Student</option>
+					<option value="job">Full Time Job</option>
+					<option value="earner">Full Time Learner</option>
+					<option value="none">Prefer not to say</option>
+					<option value="other">Other</option>
+				</select>
+
+				<p class="label">
+					Would you recommend freeCodeCamp to a friend?
+				</p>
+				<label class="inline" for="definitely"
+					><input
+						name="recommend"
+						class="inline"
+						id="definitely"
+						type="radio"
+						checked
+					/>
+					Definitely</label
+				>
+				<label for="maybe">
+					<input
+						name="recommend"
+						class="inline"
+						id="maybe"
+						type="radio"
+					/>
+					Maybe
+				</label>
+				<label for="not-sure">
+					<input
+						name="recommend"
+						class="inline"
+						id="not-sure"
+						type="radio"
+					/>
+					Not sure
+				</label>
+
+				<label for="feature"
+					>What is your favorite feature of freeCodeCamp?</label
+				>
+				<select id="feature" name="feature" required>
+					<option value="">Select an option</option>
+					<option value="challenges">Challenges</option>
+					<option value="projects">Projects</option>
+					<option value="community">Community</option>
+					<option value="open-source">Open Source</option>
+				</select>
+			</form>
+		</main>
+	</body>
+</html>
