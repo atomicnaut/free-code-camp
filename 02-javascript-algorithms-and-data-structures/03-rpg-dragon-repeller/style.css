@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+:root {
+	--white: #e9ebed;
+	--yellow: #f9c762;
+	--dark-yellow: #f8b93a;
+	--red: #ff3347;
+	--green: #72c56d;
+	--dark-gray: #323434;
+	--light-gray: #3c3e3e;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Chakra Petch", sans-serif;
+	margin: 0;
+	padding: 0;
+	background: radial-gradient(#323434, #3c3e3e);
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+/* Header */
+header nav {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--white);
+	gap: 1rem;
+	font-size: 2rem;
+}
+
+.red {
+	color: var(--red);
+}
+
+.green {
+	color: var(--green);
+}
+
+.yellow {
+	color: var(--dark-yellow);
+}
+
+/* Main */
+main {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+/* Game */
+#game {
+	width: 50%;
+	max-width: 700px;
+	background-color: var(--white);
+	color: var(--white);
+	padding: 1rem;
+	border-radius: 0.3rem;
+	margin-top: 2rem;
+}
+
+#controls,
+#stats {
+	color: var(--dark-gray);
+}
+
+#stats {
+	font-size: 1.7rem;
+	background-color: var(--green);
+	padding: 1rem;
+	border-radius: 0.3rem;
+}
+
+.stat {
+	padding-right: 1rem;
+}
+
+/* Controls */
+#controls {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	height: 5rem;
+	gap: 0.5rem;
+}
+
+button {
+	cursor: pointer;
+	color: var(--dark-gray);
+	background-color: var(--yellow);
+	background: linear-gradient(var(--yellow), var(--dark-yellow));
+	border: 3px solid var(--dark-yellow);
+	padding: 0.75rem 0.75rem;
+	border-radius: 0.3rem;
+	font-size: 1.1rem;
+	font-weight: 500;
+	transition: transform 300ms;
+}
+
+button:hover {
+	background: linear-gradient(#f9c762e4, #f8b93ae4);
+}
+
+/* Monster */
+#monsterStats {
+	display: none;
+	padding: 1rem;
+	color: var(--white);
+	background-color: var(--red);
+	font-size: 1.3rem;
+	border-radius: 0.3rem;
+	margin-bottom: 0.5rem;
+}
+
+/* Text */
+#text {
+	background-color: var(--dark-gray);
+	color: var(--white);
+	padding: 1rem;
+	font-size: 1.3rem;
+	border-radius: 0.3rem;
+	line-height: 1.3;
+}
+
+/* Footer */
+footer {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: var(--white);
+	gap: 1rem;
+}
+
+.middle-icon {
+	padding-inline: 0.3rem;
+}
