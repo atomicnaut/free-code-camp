@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+	--ivory: #f8fbef;
+	--background: radial-gradient(#394156ee, #394156);
+	--dark-gray: #394156;
+	--red: #fe5f55;
+	--blue: #4f80e3;
+	--green: #88bc76;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Montserrat, sans-serif;
+	background: var(--background);
+	color: var(--ivory);
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+button {
+	all: unset;
+	outline: revert;
+	box-sizing: border-box;
+}
+
+/* Header */
+header {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--ivory);
+	gap: 1rem;
+	font-size: 2rem;
+}
+
+.red {
+	color: var(--red);
+}
+
+.blue {
+	color: var(--blue);
+}
+
+.green {
+	color: var(--green);
+}
+
+/* Main */
+.container {
+	width: 90%;
+	max-width: 680px;
+}
+
+.container,
+.output {
+	margin: 1rem auto;
+}
+
+/* Form */
+form {
+	padding-bottom: 2.2rem;
+	margin-bottom: 0;
+	margin-top: 1rem;
+}
+label,
+legend {
+	font-size: 1.2rem;
+}
+
+.budget {
+	margin-bottom: 1rem;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.budget label {
+	font-size: 1.3rem;
+	margin-bottom: 0.5rem;
+}
+
+.budget input {
+	text-align: center;
+	height: 2rem;
+	font-weight: bold;
+}
+
+/* Fieldset */
+fieldset {
+	border: 1px solid var(--ivory);
+	opacity: 0.9;
+	border-radius: 0.3rem;
+	padding: 0.75rem;
+}
+
+/* Form Control */
+input,
+select {
+	min-height: 1.5rem;
+	color: var(--dark-gray);
+	border-radius: 0.3rem;
+	border: none;
+	font-size: 1rem;
+	padding: 0.5rem 1rem;
+}
+
+fieldset,
+label,
+button,
+input,
+select {
+	margin-bottom: 1rem;
+}
+
+/* Form Buttons */
+button {
+	cursor: pointer;
+	text-decoration: none;
+	background-color: var(--green);
+	border: 2px solid var(--green);
+	padding: 0.5rem 1rem;
+	border-radius: 0.3rem;
+}
+
+button:hover {
+	opacity: 0.95;
+}
+
+/* Form Submission */
+.controls {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2rem;
+}
+
+select {
+	margin-right: 0.5rem;
+}
+
+.calculate {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+.blue-btn {
+	background-color: var(--blue);
+	border-color: var(--blue);
+}
+
+#clear {
+	background-color: var(--red);
+	border-color: var(--red);
+}
+
+.input-container {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Output */
+.output {
+	padding: 1rem;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 5rem;
+	z-index: 1;
+	background-color: var(--dark-gray);
+}
+
+.hide {
+	display: none;
+}
+
+.output span {
+	font-weight: bold;
+	font-size: 1.4rem;
+}
+
+.surplus {
+	color: var(--red);
+}
+
+.deficit {
+	color: var(--green);
+}
+
+hr {
+	margin-block: 1.5rem;
+	width: 70%;
+}
+
+/* Footer */
+footer {
+	margin-top: auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: var(--white);
+	gap: 1rem;
+	z-index: -1;
+}
+
+.middle-icon {
+	padding-inline: 0.3rem;
+}
